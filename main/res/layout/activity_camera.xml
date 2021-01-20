@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_camera"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.a420final.CameraActivity">
+
+    <TextView
+        android:id="@+id/HETitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Now take 2 selfie. Smile in the first one and not smile in the second"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/displayImageView1"
+        android:layout_width="250dp"
+        android:layout_height="350dp"
+        android:layout_below="@+id/HETitle"
+
+        android:layout_marginTop="74dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/displayImageView2"
+        android:layout_width="250dp"
+        android:layout_height="350dp"
+        android:layout_below="@+id/HETitle"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="74dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/smilebtn"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/displayImageView1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:text="class A Smile" />
+
+    <Button
+        android:id="@+id/nobtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/displayImageView1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="20dp"
+        android:text="class B Not smile" />
+
+    <Button
+        android:id="@+id/analysisBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/displayImageView1"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="Analysis" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/displayImageView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:text="Please take a pic first."
+        android:textSize="24sp" />
+
+
+    <TextView
+        android:id="@+id/buttoncount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/HETitle"
+        android:layout_alignStart="@id/HETitle"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="30dp"
+        android:text="No image taken."
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="test" />
+
+    <Button
+        android:id="@+id/model"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="80dp"
+        android:text="create model" />
+
+    <ImageView
+        android:id="@+id/testimage"
+        android:layout_below="@+id/result"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_width="250dp"
+        android:layout_height="350dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/nextpage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/test"
+        android:layout_marginLeft="300dp"
+        android:layout_alignLeft="@id/testimage"
+        android:text="Next page" />
+
+    <TextView
+        android:id="@+id/dis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/result"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="TextView" />
+    <!--        android:layout_centerHorizontal="true"-->
+
+
+</RelativeLayout>
